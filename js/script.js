@@ -1,23 +1,23 @@
-var allStrings []; 
+var textString = []; 
 var total = 0; 
 var sum = 0; 
 
-$(#'submit').on('click', startAdd); 
-$(#reset').on('click', clearForm); 
+$('#submit').on('click', startAdd);
+$('#reset').on('click', clearForm);
   
-function startAdd() {
+function startAdd () {
   var addData = $("#textInput").val();
   if ($.isNumeric(addData)){
-    total ++; 
-    sum += parseFloat(addData); 
-    updateNumbers(); 
+    total ++;
+    sum += parseFloat(addData);
+    updateNumbers();
   }
   else {
-    allStrings.push(addData); 
-    updateText(addData); 
+      textString.push(addData);
+      updateText(addData);
   }
-  $('#textInput').val(''); 
-  event.preventDefault(); 
+  $('#textInput').val('');
+  event.preventDefault();
 } 
 
 function updateNumbers () {
@@ -30,10 +30,21 @@ function updateNumbers () {
   $('#sum').text(sum); 
 }
 
-funtion updateText(addData) {
+function updateText(addData) {
   
-  var text = addData.toLowerCase().split(" "); 
+  var text = addData.toLowerCase().split(" ");
   
-  $('#conCat').text(textString.join(' ')); 
+  $('#conCat').text(textString.join(' '));
+  $('#totalStrings').text(textString.length);
+}
+
+function clearForm() {
+  textString = []; 
+  total = 0; 
+  sum = 0; 
+  
+  $('#conCat').text(""); 
   $('#totalStrings').text(textString.length); 
+  
+  updateNumbers(); 
 }
