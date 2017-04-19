@@ -29,3 +29,11 @@ function updateNumbers () {
   $('#average').text(average); 
   $('#sum').text(sum); 
 }
+
+funtion updateText(addData) {
+  
+  var text = addData.toLowerCase().split(" "); 
+  
+  $('#conCat').text(textString.join(' ')); 
+  $('#totalStrings').text(textString.length); 
+}
