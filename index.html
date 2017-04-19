@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <title>Gimmie a Number!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/d93f59540a.js"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="bg-primary">Numbers and Strings</h1>
+      </header>
+    
+    <section>
+      <h2>Assignment 2:  Number and Text Form</h2>
+        <form name="addForm" id="addForm">
+          <div class="form-group">
+            <label><u>Enter Numbers or Text</u></label>
+            <textarea name="number" id="textInput" class="form-control" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="button" id="submit" class="btn btn-success btn-sm">Submit</button>
+            <button type="button" id="reset" class="btn btn-danger btn-sm">Start Over</button>          
+          </div>
+        </form>
+      
+      <div id="numberOutput">
+        <h2>Numbers</h2>
+        <p class="text-primary"><b>Count: </b><span id="count">0</span></p>
+        <p class="text-primary"><b>Sum: </b><span id="sum">0</span></p>
+        <p class="text-primary"><b>Average: </b><span id="average">0</span></p>      
+      </div>
+      
+      <div id="stringOutput">
+        <h2>String Output</h2>
+        <p class="text-primary"><b>Concatenated: </b><span id="allStrings"></span></p>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    </div>
+  </body>
+</html>
+  
